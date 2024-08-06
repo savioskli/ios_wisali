@@ -1,0 +1,11 @@
+{
+  "projects": {
+    "default": "wisali-thailand"
+  },
+  "targets": {},
+  "etags": {
+    "wisali-thailand": {
+      "extensionInstances": {}
+    }
+  }
+}
