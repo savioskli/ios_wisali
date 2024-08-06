@@ -1,0 +1,131 @@
+[debug] [2024-04-22T12:23:37.558Z] ----------------------------------------------------------------------
+[debug] [2024-04-22T12:23:37.561Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Savio\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-22T12:23:37.562Z] CLI Version:   13.7.3
+[debug] [2024-04-22T12:23:37.563Z] Platform:      win32
+[debug] [2024-04-22T12:23:37.563Z] Node Version:  v18.20.2
+[debug] [2024-04-22T12:23:37.565Z] Time:          Mon Apr 22 2024 15:23:37 GMT+0300 (East Africa Time)
+[debug] [2024-04-22T12:23:37.566Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-22T12:23:37.687Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-22T12:23:37.688Z] > authorizing via signed-in user (savioskli@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Savio\Apps\Wisali\customer
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-22T12:24:03.743Z] Using project from CLI flag: wisalirides
+[debug] [2024-04-22T12:24:03.749Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wisalirides [none]
+[debug] [2024-04-22T12:24:04.595Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wisalirides 200
+[debug] [2024-04-22T12:24:04.595Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wisalirides {"projectId":"wisalirides","projectNumber":"607429994423","displayName":"Wisalirides","name":"projects/wisalirides","resources":{"hostingSite":"wisalirides","realtimeDatabaseInstance":"wisalirides-default-rtdb","storageBucket":"wisalirides.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_27fca018-feb0-49b9-9564-9abc550b3fcf"}
+[info] i  Using project wisalirides (Wisalirides) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-04-22T12:24:04.646Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-04-22T12:24:04.646Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/wisalirides
+[debug] [2024-04-22T12:24:06.911Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/firebasedatabase.googleapis.com 200
+[debug] [2024-04-22T12:24:06.911Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-04-22T12:24:06.913Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/wisalirides/locations/-/instances/wisalirides-default-rtdb [none]
+[debug] [2024-04-22T12:24:08.760Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/wisalirides/locations/-/instances/wisalirides-default-rtdb 200
+[debug] [2024-04-22T12:24:08.760Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/wisalirides/locations/-/instances/wisalirides-default-rtdb {"name":"projects/607429994423/locations/europe-west1/instances/wisalirides-default-rtdb","project":"projects/607429994423","databaseUrl":"https://wisalirides-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-04-22T12:24:08.768Z] >>> [apiv2][query] GET https://wisalirides-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2024-04-22T12:24:09.356Z] <<< [apiv2][status] GET https://wisalirides-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-04-22T12:24:09.356Z] <<< [apiv2][body] GET https://wisalirides-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for wisalirides-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-04-22T12:24:09.378Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/firestore.googleapis.com [none]
+[debug] [2024-04-22T12:24:09.378Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/firestore.googleapis.com x-goog-quota-user=projects/wisalirides
+[debug] [2024-04-22T12:24:11.925Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/firestore.googleapis.com 200
+[debug] [2024-04-22T12:24:11.926Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/firestore.googleapis.com [omitted]
+[debug] [2024-04-22T12:24:11.927Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/wisalirides/databases/(default) [none]
+[debug] [2024-04-22T12:24:13.182Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/wisalirides/databases/(default) 200
+[debug] [2024-04-22T12:24:13.182Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/wisalirides/databases/(default) {"name":"projects/wisalirides/databases/(default)","uid":"0cc702fc-771d-4b35-9ba6-8b09dd1e8a11","createTime":"2023-11-23T09:53:48.324377Z","updateTime":"2023-11-23T09:53:48.324377Z","locationId":"eur3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-04-22T11:24:13.300249Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"e","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"ILbNmZ/o1YUDMMfR+fnrzoQD"}
+[debug] [2024-04-22T12:24:13.182Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-04-22T12:24:13.183Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-22T12:24:13.183Z] > authorizing via signed-in user (savioskli@gmail.com)
+[debug] [2024-04-22T12:24:13.183Z] [iam] checking project wisalirides for permissions ["firebase.projects.get"]
+[debug] [2024-04-22T12:24:13.184Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wisalirides:testIamPermissions [none]
+[debug] [2024-04-22T12:24:13.184Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/wisalirides:testIamPermissions x-goog-quota-user=projects/wisalirides
+[debug] [2024-04-22T12:24:13.184Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wisalirides:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-22T12:24:14.983Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/wisalirides:testIamPermissions 200
+[debug] [2024-04-22T12:24:14.983Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wisalirides:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-04-22T12:24:14.994Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/wisalirides/releases pageSize=10&pageToken=
+[debug] [2024-04-22T12:24:15.932Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/wisalirides/releases 200
+[debug] [2024-04-22T12:24:15.932Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/wisalirides/releases {"releases":[{"name":"projects/wisalirides/releases/cloud.firestore","rulesetName":"projects/wisalirides/rulesets/d016223d-0c48-455d-ac8d-671470f9afa0","createTime":"2023-11-23T09:53:55.923931Z","updateTime":"2023-12-04T05:19:56.573277Z"},{"name":"projects/wisalirides/releases/firebase.storage/wisalirides","rulesetName":"projects/wisalirides/rulesets/e1145c3e-1c13-4db6-bc8d-abe6dff8c389","createTime":"2023-12-08T12:52:29.540530Z","updateTime":"2023-12-08T12:52:29.540530Z"},{"name":"projects/wisalirides/releases/firebase.storage/wisalirides.appspot.com","rulesetName":"projects/wisalirides/rulesets/538f74a0-97ae-4ca4-84b3-2c7376d40cd9","createTime":"2023-12-08T12:50:16.845038Z","updateTime":"2023-12-09T17:53:16.781916Z"}]}
+[debug] [2024-04-22T12:24:16.310Z] Found ruleset: projects/wisalirides/rulesets/d016223d-0c48-455d-ac8d-671470f9afa0
+[debug] [2024-04-22T12:24:16.311Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/wisalirides/rulesets/d016223d-0c48-455d-ac8d-671470f9afa0 [none]
+[debug] [2024-04-22T12:24:17.045Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/wisalirides/rulesets/d016223d-0c48-455d-ac8d-671470f9afa0 200
+[debug] [2024-04-22T12:24:17.045Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/wisalirides/rulesets/d016223d-0c48-455d-ac8d-671470f9afa0 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-04-22T12:24:36.654Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/wisalirides/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-04-22T12:24:36.658Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/wisalirides/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-04-22T12:24:37.934Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/wisalirides/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-04-22T12:24:37.935Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/wisalirides/databases/(default)/collectionGroups/-/indexes {"indexes":[{"name":"projects/wisalirides/databases/(default)/collectionGroups/chat/indexes/CICAgLjRyYIJ","queryScope":"COLLECTION","fields":[{"fieldPath":"driverId","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders/indexes/CICAgNiav4AK","queryScope":"COLLECTION","fields":[{"fieldPath":"paymentStatus","order":"ASCENDING"},{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"userId","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders/indexes/CICAgJim14AK","queryScope":"COLLECTION","fields":[{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders/indexes/CICAgLjy8IAK","queryScope":"COLLECTION","fields":[{"fieldPath":"serviceId","order":"ASCENDING"},{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"position.geohash","order":"ASCENDING"},{"fieldPath":"__name__","order":"ASCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders/indexes/CICAgOjXh4EK","queryScope":"COLLECTION","fields":[{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"createdDate","order":"ASCENDING"},{"fieldPath":"__name__","order":"ASCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/wallet_transaction/indexes/CICAgNiroIEK","queryScope":"COLLECTION","fields":[{"fieldPath":"userId","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/documents/indexes/CICAgJj7z4EK","queryScope":"COLLECTION","fields":[{"fieldPath":"isDeleted","order":"ASCENDING"},{"fieldPath":"id","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders_intercity/indexes/CICAgNjpgYIK","queryScope":"COLLECTION","fields":[{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"userId","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders_intercity/indexes/CICAgLjRyYIK","queryScope":"COLLECTION","fields":[{"fieldPath":"driverId","order":"ASCENDING"},{"fieldPath":"intercityServiceId","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/driver_users/indexes/CICAgJjF9oIK","queryScope":"COLLECTION","fields":[{"fieldPath":"documentVerification","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/withdrawal_history/indexes/CICAgLiIkYMK","queryScope":"COLLECTION","fields":[{"fieldPath":"userId","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders_intercity/indexes/CICAgJiUpoMK","queryScope":"COLLECTION","fields":[{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"createdDate","order":"ASCENDING"},{"fieldPath":"__name__","order":"ASCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/coupon/indexes/CICAgNi47oMK","queryScope":"COLLECTION","fields":[{"fieldPath":"isDeleted","order":"ASCENDING"},{"fieldPath":"title","order":"ASCENDING"},{"fieldPath":"__name__","order":"ASCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders/indexes/CICAgJjmnIgK","queryScope":"COLLECTION","fields":[{"fieldPath":"driverId","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders_intercity/indexes/CICAgJjFvYoK","queryScope":"COLLECTION","fields":[{"fieldPath":"intercityServiceId","order":"ASCENDING"},{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"position.geohash","order":"ASCENDING"},{"fieldPath":"__name__","order":"ASCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders_intercity/indexes/CICAgNi4o4sK","queryScope":"COLLECTION","fields":[{"fieldPath":"driverId","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders/indexes/CICAgJiH2JAK","queryScope":"COLLECTION","fields":[{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"userId","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/banner/indexes/CICAgJjmiJEK","queryScope":"COLLECTION","fields":[{"fieldPath":"enable","order":"ASCENDING"},{"fieldPath":"isDeleted","order":"ASCENDING"},{"fieldPath":"position","order":"ASCENDING"},{"fieldPath":"__name__","order":"ASCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/orders_intercity/indexes/CICAgNjaxJEK","queryScope":"COLLECTION","fields":[{"fieldPath":"paymentStatus","order":"ASCENDING"},{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"userId","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/wallet_transaction/indexes/CICAgNi4-ZIK","queryScope":"COLLECTION","fields":[{"fieldPath":"userType","order":"ASCENDING"},{"fieldPath":"createdDate","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/wisalirides/databases/(default)/collectionGroups/chat/indexes/CICAgJjFqZMK","queryScope":"COLLECTION","fields":[{"fieldPath":"customerId","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"}]}
+[debug] [2024-04-22T12:24:38.188Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/wisalirides/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-04-22T12:24:38.189Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/wisalirides/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/wisalirides/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-04-22T12:24:38.192Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-22T12:24:38.192Z] > authorizing via signed-in user (savioskli@gmail.com)
+[debug] [2024-04-22T12:24:38.192Z] [iam] checking project wisalirides for permissions ["firebase.projects.get"]
+[debug] [2024-04-22T12:24:38.193Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wisalirides:testIamPermissions [none]
+[debug] [2024-04-22T12:24:38.193Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/wisalirides:testIamPermissions x-goog-quota-user=projects/wisalirides
+[debug] [2024-04-22T12:24:38.193Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wisalirides:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-22T12:24:39.999Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/wisalirides:testIamPermissions 200
+[debug] [2024-04-22T12:24:40.000Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wisalirides:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-22T12:24:40.001Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-04-22T12:24:40.001Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/wisalirides
+[debug] [2024-04-22T12:24:40.005Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-04-22T12:24:40.005Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/wisalirides
+[debug] [2024-04-22T12:24:42.155Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/runtimeconfig.googleapis.com 200
+[debug] [2024-04-22T12:24:42.155Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-04-22T12:24:42.158Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/cloudfunctions.googleapis.com 200
+[debug] [2024-04-22T12:24:42.158Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/wisalirides/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default, wisaliridesfunctions
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+

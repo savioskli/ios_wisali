@@ -1,0 +1,138 @@
+{
+    "settings": {
+        "Version": {},
+        "adminCommission": {
+            "amount": "10",
+            "isEnabled": true,
+            "type": "percentage"
+        },
+        "contact_us": {
+            "email": "info@yourdomain.com",
+            "address": "Your Address",
+            "subject": "Customer Feedback",
+            "supportURL": "https://Wisali-landing.siswebapp.com/contact-us",
+            "phone": "+911234567890"
+        },
+        "footerTemplate": {
+            "footerTemplate": "<footer class=\"section-footer border-top bg-dark\">\n   <div class=\"container\">\n      <section class=\"footer-top pb-5 text-center pt-0\">\n        <div class=\"ft-logo mb-5\">\n          <img src=\"https://Wisali-landing.siswebapp.com/img/footer_logo.png\" alt=\"Logo\">\n        </div>          \n        <div class=\"footer-tp-middel d-flex align-items-center mb-5\">\n           <div class=\"ft-social\">\n             <ul>\n                <li><a href=\"#\"><img src=\"https://Wisali-landing.siswebapp.com/img/fb_footer.png\" alt=\"facebook\"></a></li>\n                <li><a href=\"#\"><img src=\"https://Wisali-landing.siswebapp.com/img/twitter_footer.png\" alt=\"twitter\"></a></li>\n                <li><a href=\"#\"><img src=\"https://Wisali-landing.siswebapp.com/img/insta_footer.png\" alt=\"instagram\"></a></li>\n                <li><a href=\"#\"><img src=\"https://Wisali-landing.siswebapp.com/img/pentrest_footer.png\" alt=\"pinterest\"></a></li>\n                <li><a href=\"#\"><img src=\"https://Wisali-landing.siswebapp.com/img/g+_footer.png\" alt=\"google\"></a></li>  \n             </ul>  \n           </div> \n           <div class=\"ft-app-link ml-3\">\n               <ul>\n                <li><a href=\"#\"><img src=\"https://Wisali-landing.siswebapp.com/img/appstore_footer.png\" alt=\"App Store\"></a></li>\n                <li><a href=\"#\"><img src=\"https://Wisali-landing.siswebapp.com/img/google_play_footer.png\" alt=\"App Store\"></a></li>\n                \n             </ul>  \n           </div>\n        </div>\n        <div class=\"footer-tp-bottom\">\n            <div class=\"contact-info\">\n                <h3>CONTACT US</h3>\n                <ul>\n                     <li>\n                        <a href=\"tel:+14152300069\"><img src=\"https://Wisali-landing.siswebapp.com/img/call.png\" alt=\"info\"> +1 415 230 0069</a>\n                    </li>\n                    <li>\n                        <a href=\"mailto:info@Wisali.com\"><img src=\"https://Wisali-landing.siswebapp.com/img/mail.png\" alt=\"info\"> info@Wisali.com</a>\n                    </li>\n                   \n                </ul>\n            </div>\n            \n        </div>\n\n      </section>  \n\n\n        <section class=\"footer-copyright border-top py-3\">\n           <div class=\"container text-center\">\n             <p class=\"mb-0\">© Copyright 2023 Wisali. All rights reserved.</p>\n           </div>\n        </section>\n   </div>     \n   <a href=\"#\" id=\"toTopBtn\" class=\"cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out\" data-abc=\"true\"></a>\n</footer>"
+        },
+        "global": {
+            "privacyPolicy": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+            "termsAndConditions": "<p><font color=\"#000000\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</font></p><p><br></p>",
+            "appVersion": "2.2"
+        },
+        "globalKey": {
+            "serverKey": "",
+            "googleMapKey": ""
+        },
+        "globalValue": {
+            "minimumAmountToWithdrawal": "100",
+            "minimumDepositToRideAccept": "100",
+            "distanceType": "Km",
+            "radius": "1000",
+            "mapType": "inappmap",
+            "driverLocationUpdate": "10"
+        },
+        "headerTemplate": {
+            "headerTemplate": "<header class=\"section-header\">\n\n <div class=\"container\">\n     <div class=\"row\">\n        <div class=\"main-logo col-md-6\">\n           <div class=\"site-logo\">  \n            <a href=\"#\">\n             <img class=\"img-fluid\" src=\"https://Wisali-landing.siswebapp.com/img/header_logo.png\" alt=\"logo\">\n            </a>\n         </div>\n        </div> \n\n        <div class=\"header-right col-md-6 text-right\">\n            <ul class=\"menu\">\n                <li><a href=\"#our-mission\">About Wisali</a></li>\n                <li><a href=\"#how-it-works\">Service</a></li>\n                <li><a href=\"#mobile-app\">Mobile App</a></li>\n            </ul>\n        </div> \n     </div>\n </div>\n  \n\n</header>"
+        },
+        "landingPageTemplate": {
+            "landingPageTemplate": "<!-- alert: do not change class name -->\n<div class=\"osahan-home-page\">\n\n  <div class=\"home-banner\">\n    \n   <div class=\"banner-inner\">\n      <div class=\"container\">   \n        <div class=\"row align-items-center\">\n         <div class=\"col-md-5\">  \n           <div class=\"homebanner-content\">\n            <h1>The Best way to get Wherever you’re going</h1>\n            <p>The online cab booking service providers care the price of traveling based on the distance of travel trip and type of car, traffic, and waiting prices. There are numerous apps.</p>\n            <div class=\"ban-btn\">\n                <a href=\"#\"><img src=\"https://Wisali-landing.siswebapp.com/img/appstore.png\"></a>\n                <a href=\"#\"><img src=\"https://Wisali-landing.siswebapp.com/img/google_play.png\"></a>\n            </div>\n          </div>\n         </div>\n         <div class=\"col-md-7 banner-right\">\n            <div class=\"banner-img text-left\">\n            <img src=\"https://Wisali-landing.siswebapp.com/img/hero_img.png\">\n            </div>\n         </div> \n      </div>\n    </div>  \n    </div> \n</div> \n\n<section class=\"sec-delivery-app pt-5 pb-5\" id=\"our-mission\">    \n  <div class=\"container\">\n    <div class=\"row align-items-center\">\n        <div class=\"col-md-5 delapp-left pr-4\">\n            <img src=\"https://Wisali-landing.siswebapp.com/img/feel_the_img.png\" alt=\"Grocery Delivery App\">\n        </div>\n        <div class=\"col-md-7 delapp-right pl-5\">\n            <div class=\"delapp-right-cont mb-4\">\n                <h3>Feel the difference and Relaxation <br>with Wisali Taxi Company!</h3>\n                <p>The online cab booking service providers care the price of traveling based on the distance of travel trip and type of car, traffic, and waiting prices. There are numerous apps available in the android play store and apple app store for cab booking in India.</p> \n\n                <p>Selecting the greatest taxi booking apps in India is tough, which may vary from town to town.</p>\n\n                <ul>\n                    <li>At vero eos et accusamus et iusto odio.</li>\n                    <li>Established fact that a reader will be distracted.</li>\n                    <li>Sed ut perspiciatis unde omnis iste natus sit.</li>\n                </ul>\n            </div>\n           \n           \n        </div>\n    </div>   \n  </div> \n</section>\n\n<section class=\"sec-how-it-work py-7\" id=\"how-it-works\">\n    <div class=\"container\">\n        <div class=\"howitwork-top text-center mb-5\">\n            <img src=\"https://Wisali-landing.siswebapp.com/img/service_img.png\" alt=\"How it work\">\n        </div>\n        <div class=\"row howitwork-content\">\n            <div class=\"col-md-4\">\n               <div class=\"howitwork-block howitwork-block1\">\n                 <span class=\"hw-icon\"> \n                   <img src=\"https://Wisali-landing.siswebapp.com/img/ic1.png\" alt=\"How it work\">\n               </span>\n               <div class=\"hwit-detail\">\n                   <h3>SAFE GUARANTEE</h3>\n                   <p>Easy and quick booking in just 2 tabs  just add both location details and in the next tab just acceptance from driver for the ride. Here we goo!</p>\n                </div>  \n               </div> \n            </div>\n            <div class=\"col-md-4\">\n               <div class=\"howitwork-block howitwork-block2\">\n                 <span class=\"hw-icon\"> \n                   <img src=\"https://Wisali-landing.siswebapp.com/img/ic2.png\" alt=\"How it work\">\n               </span>\n               <div class=\"hwit-detail\">\n                   <h3>FAST PICKUPS</h3>\n                   <p>Easy and quick booking in just 2 tabs  just add both location details and in the next tab just acceptance from driver for the ride. Here we goo! </p>\n                </div>  \n               </div> \n            </div>\n            <div class=\"col-md-4\">\n               <div class=\"howitwork-block howitwork-block3\">\n                 <span class=\"hw-icon\"> \n                   <img src=\"https://Wisali-landing.siswebapp.com/img/ic3.png\" alt=\"How it work\">\n               </span>\n               <div class=\"hwit-detail\">\n                   <h3>QUICK RIDE</h3>\n                   <p>Easy and quick booking in just 2 tabs  just add both location details and in the next tab just acceptance from driver for the ride. Here we goo!</p>\n                </div>  \n               </div> \n            </div>\n           \n        </div>\n    </div>\n    \n</section>\n\n\n<section class=\"sec-get-started\" id=\"mobile-app\">\n    <div class=\"container\">\n     <div class=\"get-started-box\">   \n      <div class=\"row align-items-end\">\n        <div class=\"col-md-5 get-started-left\">\n           <div class=\"sec-title mb-4 white-title\">\n                <h2>Get a free Wisali app from online store </h2>\n            </div> \n          <div class=\"cust-ser-block mb-4\">\n            <p class=\"white-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do incididunt ut labore et dolore magna is aliqua. Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna consectetur adipiscing elit.</p>\n          </div> \n          <div class=\"ban-btn\">\n                <a href=\"#\"><https: Wisali-landing.siswebapp.com=\"\" img=\"\" src=\"img/appstore.png\"></https:></a>\n                <a href=\"#\"><https: Wisali-landing.siswebapp.com=\"\" img=\"\" src=\"img/google_play.png\"></https:></a>\n            </div>\n        </div>\n        \n        <div class=\"col-md-7 get-started-right\">\n           <div class=\"get-started-img text-right\">\n            <img src=\"https://Wisali-landing.siswebapp.com/img/get_app_img.png\" alt=\"Get Started\"> \n            </div> \n        </div>\n\n      </div>\n      </div>\n    </div>\n</section>\n\n<section class=\"client-logo-sec py-7\">\n    <div class=\"container\">\n        <div class=\"client-logo-box\">\n            <img src=\"https://Wisali-landing.siswebapp.com/img/client-logo.png\">\n        </div>\n    </div>\n</section>\n\n\n</div>\n\n"
+        },
+        "logo": {
+            "appLogo": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2FWisali-logo_1696839532869.png?alt=media&token=cec698a2-c2b3-4f9d-9ceb-c906bbb343b2",
+            "appFavIconLogo": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2Ffavicon_1696839536525.png?alt=media&token=47d00371-96c3-4ac0-a76d-5aa39cd51cba"
+        },
+        "payment": {
+            "cash": {
+                "name": "Cash",
+                "enable": true,
+                "image": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2Fcashondelivery_1696847291901.png?alt=media&token=769944c7-0bad-4a83-955b-5adefc96ac26"
+            },
+            "razorpay": {
+                "razorpayKey": "",
+                "razorpaySecret": "",
+                "isSandbox": true,
+                "name": "RazorPay",
+                "enable": true,
+                "image": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2Frazorepay_1696847430855.png?alt=media&token=5cd0c684-5038-4d8d-9127-8c4ae5520dd7"
+            },
+            "paypal": {
+                "name": "Paypal",
+                "isSandbox": true,
+                "braintree_merchantid": "",
+                "braintree_privatekey": "",
+                "braintree_publickey": "",
+                "braintree_tokenizationKey": "",
+                "paypalUserName": "",
+                "paypalpassword": "",
+                "paypalAppId": "",
+                "paypalSecret": "",
+                "enable": true,
+                "image": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2Fpaypal_1696847455602.png?alt=media&token=c209b404-83a3-453e-b340-470f1db887ed"
+            },
+            "paytm": {
+                "name": "Paytm",
+                "enable": true,
+                "paytmMID": "",
+                "merchantKey": "",
+                "isSandbox": false,
+                "image": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2Fpaytm_1696847502484.png?alt=media&token=64e9a29f-9def-41bd-a1b2-5acf98fc0aa9"
+            },
+            "payfast": {
+                "merchantId": "",
+                "name": "PayFast",
+                "return_url": "https://yourdomain.com/success",
+                "isSandbox": true,
+                "notify_url": "https://yourdomain.com/notify",
+                "cancel_url": "https://yourdomain.com/cancel",
+                "merchantKey": "",
+                "enable": true,
+                "image": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2Fpayfast_1696847658735.png?alt=media&token=b7fa0f20-2e67-42d7-b560-d2f4c7e5fdd8"
+            },
+            "flutterWave": {
+                "secretKey": "",
+                "encryptionKey": "",
+                "publicKey": "",
+                "isSandbox": true,
+                "name": "FlutterWave",
+                "enable": true,
+                "image": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2Fflutter_wave_1696847869621.png?alt=media&token=7d92ecdd-7c25-431e-8c60-f463160ddc34"
+            },
+            "mercadoPago": {
+                "name": "MercadoPago",
+                "publicKey": "",
+                "accessToken": "",
+                "isSandbox": true,
+                "enable": true,
+                "image": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2Fmarcado_pago_1696847910780.png?alt=media&token=6fb79ae3-ca12-4015-9bef-8c875fc5837f"
+            },
+            "wallet": {
+                "name": "Wallet",
+                "enable": true,
+                "image": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2FWisali_wallet1-(1)_1696849871599.png?alt=media&token=3d31358e-3987-467c-ab9a-b742a62834a5"
+            },
+            "strip": {
+                "clientpublishableKey": "",
+                "stripeSecret": "",
+                "isSandbox": true,
+                "enable": true,
+                "name": "Stripe",
+                "image": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2Fstripe_1698234806759.png?alt=media&token=5efea7bc-711b-4b7a-8332-1e000331c4ec"
+            },
+            "payStack": {
+                "secretKey": "",
+                "name": "PayStack",
+                "callbackURL": "https://yourdomain.com/success",
+                "publicKey": "",
+                "isSandbox": true,
+                "webhookURL": "https://yourdomain.com/success",
+                "enable": true,
+                "image": "https://firebasestorage.googleapis.com/v0/b/Wisali-1a752.appspot.com/o/images%2Fpaystack_1698235180441.png?alt=media&token=6fb651ef-1976-4f3c-8bf0-02c18d761d76"
+            }
+        },
+        "referral": {
+            "referralAmount": "50"
+        }
+    }
+}

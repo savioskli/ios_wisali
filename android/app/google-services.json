@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "685301331456",
+    "firebase_url": "https://wisali-thailand-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "wisali-thailand",
+    "storage_bucket": "wisali-thailand.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685301331456:android:09e9c859b66abb0775cae5",
+        "android_client_info": {
+          "package_name": "com.wisali.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685301331456-7g0ehjsp1oj0ned46gdtiai4rhjlo1d3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wisali.customer",
+            "certificate_hash": "c60fdb7d8897ead2f9c50c7af886042e4de3b449"
+          }
+        },
+        {
+          "client_id": "685301331456-hb5l283ptavn5s5br1j9ggv7jjodhihb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wisali.customer",
+            "certificate_hash": "3a8b8f4050eab05687ec2f2829e52d7a5e5c0326"
+          }
+        },
+        {
+          "client_id": "685301331456-fnpnqv7nvg84h9m9mvcrp07msr9ebrtc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhPx9ahsLMxZBlvEi6xL7zVnpQBHLm6_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685301331456-fnpnqv7nvg84h9m9mvcrp07msr9ebrtc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "685301331456-857d4vupsteqd1jc2eofpoch8olh0p7i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wisali.customer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685301331456:android:21981b08d74b64fb75cae5",
+        "android_client_info": {
+          "package_name": "com.wisali.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685301331456-h1bs2l0d672b0nnetvhjgron49mcu4tg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wisali.driver",
+            "certificate_hash": "3a8b8f4050eab05687ec2f2829e52d7a5e5c0326"
+          }
+        },
+        {
+          "client_id": "685301331456-fnpnqv7nvg84h9m9mvcrp07msr9ebrtc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhPx9ahsLMxZBlvEi6xL7zVnpQBHLm6_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685301331456-fnpnqv7nvg84h9m9mvcrp07msr9ebrtc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "685301331456-857d4vupsteqd1jc2eofpoch8olh0p7i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wisali.customer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
