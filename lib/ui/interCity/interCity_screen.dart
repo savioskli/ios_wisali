@@ -209,6 +209,7 @@ class InterCityScreen extends StatelessWidget {
 
 
                                         BottomPicker.dateTime(
+                                          title: ''.toString(),
                                           onSubmit: (index) {
                                             controller.dateAndTime = index;
                                             DateFormat dateFormat = DateFormat("EEE dd MMMM , HH:mm aa");
@@ -219,7 +220,7 @@ class InterCityScreen extends StatelessWidget {
                                           minDateTime: DateTime.now(),
                                           buttonAlignment: MainAxisAlignment.center,
                                           displaySubmitButton: true,
-                                          title: "",
+                                          buttonText: 'Confirm'.tr,
                                           buttonSingleColor: AppColors.primary,
                                         ).show(context);
 
