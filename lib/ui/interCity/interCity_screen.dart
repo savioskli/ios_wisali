@@ -206,8 +206,9 @@ class InterCityScreen extends StatelessWidget {
                                   ),
                                   InkWell(
                                       onTap: () async {
+
+
                                         BottomPicker.dateTime(
-                                         titleStyle : const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                                           onSubmit: (index) {
                                             controller.dateAndTime = index;
                                             DateFormat dateFormat = DateFormat("EEE dd MMMM , HH:mm aa");
@@ -217,13 +218,32 @@ class InterCityScreen extends StatelessWidget {
                                           },
                                           minDateTime: DateTime.now(),
                                           buttonAlignment: MainAxisAlignment.center,
-                                          displayButtonIcon: false,
                                           displaySubmitButton: true,
-                                          title: '',
-                                          buttonText: 'Confirm'.tr,
+                                          title: "",
                                           buttonSingleColor: AppColors.primary,
-                                          buttonTextStyle: const TextStyle(color: Colors.white),
                                         ).show(context);
+
+
+
+                                        
+                                        // BottomPicker.dateTime(
+                                        //  titleStyle : const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                        //   onSubmit: (index) {
+                                        //     controller.dateAndTime = index;
+                                        //     DateFormat dateFormat = DateFormat("EEE dd MMMM , HH:mm aa");
+                                        //     String string = dateFormat.format(index);
+
+                                        //     controller.whenController.value.text = string;
+                                        //   },
+                                        //   minDateTime: DateTime.now(),
+                                        //   buttonAlignment: MainAxisAlignment.center,
+                                        //   displayButtonIcon: false,
+                                        //   displaySubmitButton: true,
+                                        //   title: '',
+                                        //   buttonText: 'Confirm'.tr,
+                                        //   buttonSingleColor: AppColors.primary,
+                                        //   buttonTextStyle: const TextStyle(color: Colors.white),
+                                        // ).show(context);
                                       },
                                       child: TextFieldThem.buildTextFiled(
                                         context,
