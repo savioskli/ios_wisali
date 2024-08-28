@@ -207,7 +207,7 @@ class InterCityScreen extends StatelessWidget {
                                   InkWell(
                                       onTap: () async {
                                         BottomPicker.dateTime(
-                                          titleStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                         titleStyle : const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                                           onSubmit: (index) {
                                             controller.dateAndTime = index;
                                             DateFormat dateFormat = DateFormat("EEE dd MMMM , HH:mm aa");
