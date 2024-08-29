@@ -207,22 +207,19 @@ class InterCityScreen extends StatelessWidget {
                                   InkWell(
                                       onTap: () async {
 
-
-                                        BottomPicker.dateTime(
-                                          title: ''.toString(),
-                                          onSubmit: (index) {
+                                        BottomPicker.dateTime(pickerTitle: Text(''),onSubmit:(index) {
                                             controller.dateAndTime = index;
                                             DateFormat dateFormat = DateFormat("EEE dd MMMM , HH:mm aa");
                                             String string = dateFormat.format(index);
 
                                             controller.whenController.value.text = string;
                                           },
-                                          minDateTime: DateTime.now(),
-                                          buttonAlignment: MainAxisAlignment.center,
+                                          minDateTime: DateTime.now(), buttonAlignment: MainAxisAlignment.center,
                                           displaySubmitButton: true,
-                                          buttonText: 'Confirm'.tr,
-                                          buttonSingleColor: AppColors.primary,
-                                        ).show(context);
+                                          buttonContent: Text('Confirm'.tr),
+                                          buttonSingleColor: AppColors.primary,).show(context);
+
+                                    ll
 
 
 
