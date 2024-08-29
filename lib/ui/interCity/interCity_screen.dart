@@ -219,7 +219,7 @@ class InterCityScreen extends StatelessWidget {
                                           buttonContent: Text('Confirm'.tr),
                                           buttonSingleColor: AppColors.primary,).show(context);
 
-                                    ll
+                                  
 
 
 
