@@ -7,7 +7,7 @@ import 'package:customer/themes/responsive.dart';
 import 'package:customer/themes/text_field_them.dart';
 import 'package:customer/utils/DarkThemeProvider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_email_sender/flutter_email_sender.dart';
+// import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -133,14 +133,14 @@ class ContactUsScreen extends StatelessWidget {
                                                         } else if (controller.feedbackController.value.text.isEmpty) {
                                                           ShowToastDialog.showToast("Please enter feedback".tr);
                                                         } else {
-                                                          final Email email = Email(
-                                                            body: controller.feedbackController.value.text,
-                                                            subject: controller.subject.value,
-                                                            recipients: [controller.email.value],
-                                                            cc: [controller.emailController.value.text],
-                                                            isHTML: false,
-                                                          );
-                                                          await FlutterEmailSender.send(email);
+                                                          // final Email email = Email(
+                                                          //   body: controller.feedbackController.value.text,
+                                                          //   subject: controller.subject.value,
+                                                          //   recipients: [controller.email.value],
+                                                          //   cc: [controller.emailController.value.text],
+                                                          //   isHTML: false,
+                                                          // );
+                                                          // await FlutterEmailSender.send(email);
                                                           controller.emailController.value.clear();
                                                           controller.feedbackController.value.clear();
                                                         }

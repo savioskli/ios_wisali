@@ -350,12 +350,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_email_sender",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_email_sender-6.0.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "flutter_google_places_hoc081098",
       "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_google_places_hoc081098-1.2.0",
       "packageUri": "lib/",
@@ -1436,7 +1430,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2024-09-06T11:45:52.708731Z",
+  "generated": "2024-09-09T09:51:06.940076Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }
