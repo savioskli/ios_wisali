@@ -755,9 +755,11 @@ class WalletScreen extends StatelessWidget {
                           Get.back();
                           if (controller.selectedPaymentMethod.value == controller.paymentModel.value.strip!.name) {
                             controller.stripeMakePayment(amount: controller.amountController.value.text);
-                          } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.paypal!.name) {
-                            controller.paypalPaymentSheet(controller.amountController.value.text);
-                          } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.payStack!.name) {
+                          } 
+                          // else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.paypal!.name) {
+                          //   controller.paypalPaymentSheet(controller.amountController.value.text);
+                          // } 
+                          else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.payStack!.name) {
                             controller.payStackPayment(controller.amountController.value.text);
                           } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.mercadoPago!.name) {
                             controller.mercadoPagoMakePayment(context: context, amount: controller.amountController.value.text);

@@ -25,13 +25,13 @@ import 'package:customer/themes/app_colors.dart';
 import 'package:customer/utils/fire_store_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_paypal_native/flutter_paypal_native.dart';
-import 'package:flutter_paypal_native/models/custom/currency_code.dart';
-import 'package:flutter_paypal_native/models/custom/environment.dart';
-import 'package:flutter_paypal_native/models/custom/order_callback.dart';
-import 'package:flutter_paypal_native/models/custom/purchase_unit.dart';
-import 'package:flutter_paypal_native/models/custom/user_action.dart';
-import 'package:flutter_paypal_native/str_helper.dart';
+// import 'package:flutter_paypal_native/flutter_paypal_native.dart';
+// import 'package:flutter_paypal_native/models/custom/currency_code.dart';
+// import 'package:flutter_paypal_native/models/custom/environment.dart';
+// import 'package:flutter_paypal_native/models/custom/order_callback.dart';
+// import 'package:flutter_paypal_native/models/custom/purchase_unit.dart';
+// import 'package:flutter_paypal_native/models/custom/user_action.dart';
+// import 'package:flutter_paypal_native/str_helper.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 // import 'package:flutterwave_standard/flutterwave.dart';
 import 'package:get/get.dart';
@@ -95,7 +95,7 @@ class IntercityPaymentOrderController extends GetxController {
         driverUserModel.value = value;
       }
     });
-    initPayPal();
+    // initPayPal();
 
     isLoading.value = false;
     update();
@@ -318,71 +318,71 @@ class IntercityPaymentOrderController extends GetxController {
     return result;
   }
 
-  //paypal
-  final _flutterPaypalNativePlugin = FlutterPaypalNative.instance;
+  // //paypal
+  // final _flutterPaypalNativePlugin = FlutterPaypalNative.instance;
 
-  void initPayPal() async {
-    //set debugMode for error logging
-    FlutterPaypalNative.isDebugMode = paymentModel.value.paypal!.isSandbox == true ? true : false;
+  // void initPayPal() async {
+  //   //set debugMode for error logging
+  //   FlutterPaypalNative.isDebugMode = paymentModel.value.paypal!.isSandbox == true ? true : false;
 
-    //initiate payPal plugin
-    await _flutterPaypalNativePlugin.init(
-      //your app id !!! No Underscore!!! see readme.md for help
-      returnUrl: "com.parkme://paypalpay",
-      //client id from developer dashboard
-      clientID: paymentModel.value.paypal!.paypalClient.toString(),
-      //sandbox, staging, live etc
-      payPalEnvironment: paymentModel.value.paypal!.isSandbox == true ? FPayPalEnvironment.sandbox : FPayPalEnvironment.live,
-      //what currency do you plan to use? default is US dollars
-      currencyCode: FPayPalCurrencyCode.usd,
-      //action paynow?
-      action: FPayPalUserAction.payNow,
-    );
+  //   //initiate payPal plugin
+  //   await _flutterPaypalNativePlugin.init(
+  //     //your app id !!! No Underscore!!! see readme.md for help
+  //     returnUrl: "com.parkme://paypalpay",
+  //     //client id from developer dashboard
+  //     clientID: paymentModel.value.paypal!.paypalClient.toString(),
+  //     //sandbox, staging, live etc
+  //     payPalEnvironment: paymentModel.value.paypal!.isSandbox == true ? FPayPalEnvironment.sandbox : FPayPalEnvironment.live,
+  //     //what currency do you plan to use? default is US dollars
+  //     currencyCode: FPayPalCurrencyCode.usd,
+  //     //action paynow?
+  //     action: FPayPalUserAction.payNow,
+  //   );
 
-    //call backs for payment
-    _flutterPaypalNativePlugin.setPayPalOrderCallback(
-      callback: FPayPalOrderCallback(
-        onCancel: () {
-          //user canceled the payment
-          ShowToastDialog.showToast("Payment canceled");
-        },
-        onSuccess: (data) {
-          //successfully paid
-          //remove all items from queue
-          // _flutterPaypalNativePlugin.removeAllPurchaseItems();
-          ShowToastDialog.showToast("Payment Successful!!");
-          completeOrder();
-        },
-        onError: (data) {
-          //an error occured
-          ShowToastDialog.showToast("error: ${data.reason}");
-        },
-        onShippingChange: (data) {
-          //the user updated the shipping address
-          ShowToastDialog.showToast("shipping change: ${data.shippingChangeAddress?.adminArea1 ?? ""}");
-        },
-      ),
-    );
-  }
+  //   //call backs for payment
+  //   _flutterPaypalNativePlugin.setPayPalOrderCallback(
+  //     callback: FPayPalOrderCallback(
+  //       onCancel: () {
+  //         //user canceled the payment
+  //         ShowToastDialog.showToast("Payment canceled");
+  //       },
+  //       onSuccess: (data) {
+  //         //successfully paid
+  //         //remove all items from queue
+  //         // _flutterPaypalNativePlugin.removeAllPurchaseItems();
+  //         ShowToastDialog.showToast("Payment Successful!!");
+  //         completeOrder();
+  //       },
+  //       onError: (data) {
+  //         //an error occured
+  //         ShowToastDialog.showToast("error: ${data.reason}");
+  //       },
+  //       onShippingChange: (data) {
+  //         //the user updated the shipping address
+  //         ShowToastDialog.showToast("shipping change: ${data.shippingChangeAddress?.adminArea1 ?? ""}");
+  //       },
+  //     ),
+  //   );
+  // }
 
-  paypalPaymentSheet(String amount) {
-    //add 1 item to cart. Max is 4!
-    if (_flutterPaypalNativePlugin.canAddMorePurchaseUnit) {
-      _flutterPaypalNativePlugin.addPurchaseUnit(
-        FPayPalPurchaseUnit(
-          // random prices
-          amount: double.parse(amount),
+  // paypalPaymentSheet(String amount) {
+  //   //add 1 item to cart. Max is 4!
+  //   if (_flutterPaypalNativePlugin.canAddMorePurchaseUnit) {
+  //     _flutterPaypalNativePlugin.addPurchaseUnit(
+  //       FPayPalPurchaseUnit(
+  //         // random prices
+  //         amount: double.parse(amount),
 
-          ///please use your own algorithm for referenceId. Maybe ProductID?
-          referenceId: FPayPalStrHelper.getRandomString(16),
-        ),
-      );
-    }
-    // initPayPal();
-    _flutterPaypalNativePlugin.makeOrder(
-      action: FPayPalUserAction.payNow,
-    );
-  }
+  //         ///please use your own algorithm for referenceId. Maybe ProductID?
+  //         referenceId: FPayPalStrHelper.getRandomString(16),
+  //       ),
+  //     );
+  //   }
+  //   // initPayPal();
+  //   _flutterPaypalNativePlugin.makeOrder(
+  //     action: FPayPalUserAction.payNow,
+  //   );
+  // }
 
 
   ///PayStack Payment Method

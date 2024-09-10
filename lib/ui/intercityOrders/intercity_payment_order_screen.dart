@@ -1113,9 +1113,11 @@ class InterCityPaymentOrderScreen extends StatelessWidget {
                           Get.back();
                           if (controller.selectedPaymentMethod.value == controller.paymentModel.value.strip!.name) {
                             controller.stripeMakePayment(amount: controller.calculateAmount().toStringAsFixed(Constant.currencyModel!.decimalDigits!));
-                          } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.paypal!.name) {
-                            controller.paypalPaymentSheet(controller.calculateAmount().toStringAsFixed(Constant.currencyModel!.decimalDigits!));
-                          } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.payStack!.name) {
+                          } 
+                          // else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.paypal!.name) {
+                          //   controller.paypalPaymentSheet(controller.calculateAmount().toStringAsFixed(Constant.currencyModel!.decimalDigits!));
+                          // } 
+                          else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.payStack!.name) {
                             controller.payStackPayment(controller.calculateAmount().toStringAsFixed(Constant.currencyModel!.decimalDigits!));
                           } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.mercadoPago!.name) {
                             controller.mercadoPagoMakePayment(context: context, amount: controller.calculateAmount().toStringAsFixed(Constant.currencyModel!.decimalDigits!));
