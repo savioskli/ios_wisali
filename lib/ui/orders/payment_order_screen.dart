@@ -1113,9 +1113,9 @@ class PaymentOrderScreen extends StatelessWidget {
                             controller.payStackPayment(controller.calculateAmount().toStringAsFixed(Constant.currencyModel!.decimalDigits!));
                           } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.mercadoPago!.name) {
                             controller.mercadoPagoMakePayment(context: context, amount: controller.calculateAmount().toStringAsFixed(Constant.currencyModel!.decimalDigits!));
-                          } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.flutterWave!.name) {
-                            controller.flutterWaveInitiatePayment(context: context, amount: controller.calculateAmount().toStringAsFixed(Constant.currencyModel!.decimalDigits!));
-                          } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.payfast!.name) {
+                          // } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.flutterWave!.name) {
+                          //   controller.flutterWaveInitiatePayment(context: context, amount: controller.calculateAmount().toStringAsFixed(Constant.currencyModel!.decimalDigits!));
+                          // } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.payfast!.name) {
                             controller.payFastPayment(context: context, amount: controller.calculateAmount().toStringAsFixed(Constant.currencyModel!.decimalDigits!));
                           } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.paytm!.name) {
                             controller.getPaytmCheckSum(context, amount: controller.calculateAmount());

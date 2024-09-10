@@ -33,7 +33,7 @@ import 'package:flutter_paypal_native/models/custom/purchase_unit.dart';
 import 'package:flutter_paypal_native/models/custom/user_action.dart';
 import 'package:flutter_paypal_native/str_helper.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
-import 'package:flutterwave_standard/flutterwave.dart';
+// import 'package:flutterwave_standard/flutterwave.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'package:mercadopago_sdk/mercadopago_sdk.dart';
@@ -408,29 +408,29 @@ class PaymentOrderController extends GetxController {
   }
 
   //flutter wave Payment Method
-  flutterWaveInitiatePayment({required BuildContext context, required String amount}) async {
-    final flutterWave = Flutterwave(
-      amount: amount.trim(),
-      currency: "NGN",
-      customer: Customer(name: userModel.value.fullName, phoneNumber: userModel.value.phoneNumber, email: userModel.value.email.toString()),
-      context: context,
-      publicKey: paymentModel.value.flutterWave!.publicKey.toString().trim(),
-      paymentOptions: "ussd, card, barter, payattitude",
-      customization: Customization(title: "Wisali"),
-      txRef: _ref!,
-      isTestMode: paymentModel.value.flutterWave!.isSandbox!,
-      redirectUrl: '${Constant.globalUrl}success',
-      paymentPlanId: _ref!,
-    );
-    final ChargeResponse response = await flutterWave.charge();
+  // flutterWaveInitiatePayment({required BuildContext context, required String amount}) async {
+  //   final flutterWave = Flutterwave(
+  //     amount: amount.trim(),
+  //     currency: "NGN",
+  //     customer: Customer(name: userModel.value.fullName, phoneNumber: userModel.value.phoneNumber, email: userModel.value.email.toString()),
+  //     context: context,
+  //     publicKey: paymentModel.value.flutterWave!.publicKey.toString().trim(),
+  //     paymentOptions: "ussd, card, barter, payattitude",
+  //     customization: Customization(title: "Wisali"),
+  //     txRef: _ref!,
+  //     isTestMode: paymentModel.value.flutterWave!.isSandbox!,
+  //     redirectUrl: '${Constant.globalUrl}success',
+  //     paymentPlanId: _ref!,
+  //   );
+  //   final ChargeResponse response = await flutterWave.charge();
 
-    if (response.success!) {
-      ShowToastDialog.showToast("Payment Successful!!");
-      completeOrder();
-    } else {
-      ShowToastDialog.showToast(response.status!);
-    }
-  }
+  //   if (response.success!) {
+  //     ShowToastDialog.showToast("Payment Successful!!");
+  //     completeOrder();
+  //   } else {
+  //     ShowToastDialog.showToast(response.status!);
+  //   }
+  // }
 
   String? _ref;
 

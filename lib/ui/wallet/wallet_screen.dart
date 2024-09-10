@@ -761,9 +761,11 @@ class WalletScreen extends StatelessWidget {
                             controller.payStackPayment(controller.amountController.value.text);
                           } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.mercadoPago!.name) {
                             controller.mercadoPagoMakePayment(context: context, amount: controller.amountController.value.text);
-                          } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.flutterWave!.name) {
-                            controller.flutterWaveInitiatePayment(context: context, amount: controller.amountController.value.text);
-                          } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.payfast!.name) {
+                          } 
+                          // else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.flutterWave!.name) {
+                          //   controller.flutterWaveInitiatePayment(context: context, amount: controller.amountController.value.text);
+                          // } 
+                          else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.payfast!.name) {
                             controller.payFastPayment(context: context, amount: controller.amountController.value.text);
                           } else if (controller.selectedPaymentMethod.value == controller.paymentModel.value.paytm!.name) {
                             controller.getPaytmCheckSum(context, amount: double.parse(controller.amountController.value.text));

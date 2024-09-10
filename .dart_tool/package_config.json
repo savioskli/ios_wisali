@@ -362,12 +362,6 @@
       "languageVersion": "2.17"
     },
     {
-      "name": "flutter_inappwebview",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_inappwebview-5.8.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
       "name": "flutter_lints",
       "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.3",
       "packageUri": "lib/",
@@ -472,12 +466,6 @@
     {
       "name": "fluttertoast",
       "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/fluttertoast-8.2.8",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "flutterwave_standard",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/flutterwave_standard-1.0.7",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -615,9 +603,9 @@
     },
     {
       "name": "google_maps_flutter_platform_interface",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/google_maps_flutter_platform_interface-2.9.0",
+      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/google_maps_flutter_platform_interface-2.9.1",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "google_maps_flutter_web",
@@ -840,12 +828,6 @@
       "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/mime-1.0.6",
       "packageUri": "lib/",
       "languageVersion": "3.2"
-    },
-    {
-      "name": "modal_bottom_sheet",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/modal_bottom_sheet-2.1.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
     },
     {
       "name": "nested",
@@ -1077,9 +1059,9 @@
     },
     {
       "name": "shelf_static",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/shelf_static-1.1.2",
+      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/shelf_static-1.1.3",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.3"
     },
     {
       "name": "shelf_web_socket",
@@ -1281,7 +1263,7 @@
     },
     {
       "name": "uuid",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/uuid-4.4.2",
+      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/uuid-4.5.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -1430,7 +1412,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2024-09-10T07:15:45.915029Z",
+  "generated": "2024-09-10T10:01:15.456817Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }
