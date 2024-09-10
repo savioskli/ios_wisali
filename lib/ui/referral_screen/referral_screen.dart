@@ -8,7 +8,7 @@ import 'package:customer/themes/responsive.dart';
 import 'package:customer/utils/DarkThemeProvider.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_share/flutter_share.dart';
+// import 'package:flutter_share/flutter_share.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -242,10 +242,10 @@ class ReferralScreen extends StatelessWidget {
 
   Future<void> share(ReferralController controller) async {
     ShowToastDialog.closeLoader();
-    await FlutterShare.share(
-      title: 'Wisali'.tr,
-      text:
-        'Hey there, thanks for choosing Wisali. Hope you love our services. If you do, share it with your friends using code'.tr + ' ${controller.referralModel.value.referralCode.toString()}' + 'and get'.tr + '${Constant.amountShow(amount: Constant.referralAmount)}',
-    );
+    // await FlutterShare.share(
+    //   title: 'Wisali'.tr,
+    //   text:
+    //     'Hey there, thanks for choosing Wisali. Hope you love our services. If you do, share it with your friends using code'.tr + ' ${controller.referralModel.value.referralCode.toString()}' + 'and get'.tr + '${Constant.amountShow(amount: Constant.referralAmount)}',
+    // );
   }
 }

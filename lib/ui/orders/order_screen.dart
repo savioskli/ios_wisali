@@ -22,7 +22,7 @@ import 'package:customer/widget/driver_view.dart';
 import 'package:customer/widget/location_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:flutter_share/flutter_share.dart';
+// import 'package:flutter_share/flutter_share.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -202,11 +202,11 @@ class OrderScreen extends StatelessWidget {
                                                                           ),
                                                                         ),
                                                                         InkWell(onTap: () async {
-                                                                          await FlutterShare.share(
-                                                                            title: 'Ride Booked'.tr,
-                                                                            text:
-                                                                            'Your ride is booked. and you enjoy this ride and here is a otp to conform this ride ${orderModel.otp}'.tr,
-                                                                          );
+                                                                          // await FlutterShare.share(
+                                                                          //   title: 'Ride Booked'.tr,
+                                                                          //   text:
+                                                                          //   'Your ride is booked. and you enjoy this ride and here is a otp to conform this ride ${orderModel.otp}'.tr,
+                                                                          // );
                                                                         },child: const Icon(Icons.share))
                                                                       ],
                                                                     )),

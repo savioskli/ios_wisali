@@ -410,12 +410,6 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "flutter_share",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_share-2.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "flutter_spinkit",
       "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_spinkit-5.2.1",
       "packageUri": "lib/",
@@ -1406,7 +1400,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2024-09-10T13:05:45.479014Z",
+  "generated": "2024-09-10T17:50:03.573589Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }
