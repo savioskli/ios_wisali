@@ -116,18 +116,6 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "contact_picker_platform_interface",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/contact_picker_platform_interface-4.7.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "contact_picker_web",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/contact_picker_web-4.7.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "convert",
       "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/convert-3.1.1",
       "packageUri": "lib/",
@@ -438,12 +426,6 @@
       "rootUri": "file:///C:/Users/Savio/Downloads/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "3.2"
-    },
-    {
-      "name": "fluttercontactpicker",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/fluttercontactpicker-4.7.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
     },
     {
       "name": "flutterflow_paginate_firestore",
@@ -1400,7 +1382,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2024-09-10T17:50:03.573589Z",
+  "generated": "2024-09-11T08:00:35.153471Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }

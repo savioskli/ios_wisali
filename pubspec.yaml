@@ -84,7 +84,7 @@ dependencies:
   flutter_html: any
   # flutter_share: ^2.0.0
   map_launcher: ^2.5.0+1
-  fluttercontactpicker: ^4.7.0
+  # fluttercontactpicker: ^4.7.0
 
 
 #   #payment dependency

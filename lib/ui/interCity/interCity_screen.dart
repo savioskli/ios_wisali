@@ -23,7 +23,7 @@ import 'package:customer/utils/utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:fluttercontactpicker/fluttercontactpicker.dart';
+// import 'package:fluttercontactpicker/fluttercontactpicker.dart';
 import 'package:geoflutterfire2/geoflutterfire2.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -1673,17 +1673,17 @@ class InterCityScreen extends StatelessWidget {
                           height: 10,
                         ),
                         InkWell(
-                          onTap: () async {
-                            final FullContact contact = await FlutterContactPicker.pickFullContact();
-                            ContactModel contactModel = ContactModel();
-                            contactModel.fullName = "${contact.name!.firstName ?? ""} ${contact.name!.middleName ?? ""} ${contact.name!.lastName ?? ""}";
-                            contactModel.contactNumber = contact.phones[0].number;
+                          // onTap: () async {
+                          //   final FullContact contact = await FlutterContactPicker.pickFullContact();
+                          //   ContactModel contactModel = ContactModel();
+                          //   contactModel.fullName = "${contact.name!.firstName ?? ""} ${contact.name!.middleName ?? ""} ${contact.name!.lastName ?? ""}";
+                          //   contactModel.contactNumber = contact.phones[0].number;
 
-                            if (!controller.contactList.contains(contactModel)) {
-                              controller.contactList.add(contactModel);
-                              controller.setContact();
-                            }
-                          },
+                          //   if (!controller.contactList.contains(contactModel)) {
+                          //     controller.contactList.add(contactModel);
+                          //     controller.setContact();
+                          //   }
+                          // },
                           child: Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                             child: Row(
