@@ -573,7 +573,7 @@
     },
     {
       "name": "google_maps_flutter_platform_interface",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/google_maps_flutter_platform_interface-2.9.1",
+      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/google_maps_flutter_platform_interface-2.9.2",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -765,9 +765,9 @@
     },
     {
       "name": "map_launcher",
-      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/map_launcher-2.5.0+1",
+      "rootUri": "file:///C:/Users/Savio/AppData/Local/Pub/Cache/hosted/pub.dev/map_launcher-3.5.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.1"
     },
     {
       "name": "matcher",
@@ -1382,7 +1382,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2024-09-11T08:00:35.153471Z",
+  "generated": "2024-09-12T05:44:49.430194Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }
